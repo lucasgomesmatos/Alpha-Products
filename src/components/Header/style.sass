@@ -1,0 +1,41 @@
+header
+  height: 80px
+  width: 100%
+  background: #333
+
+  h1
+    a
+      text-decoration: none
+      color: #fff
+
+  nav
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    color: #ddd
+    box-shadow: 5px 5px 15px -15px rgba(85,85,85,0.29)
+
+    ul
+      display: flex
+      gap: 2rem
+      list-style: none
+
+      a
+        color: #fff
+        text-decoration: none
+        background: #444
+        padding: 8px 10px
+        border-radius: 6px
+        transition: .3s all
+        text-transform: uppercase
+        &:hover
+          background: #fff
+          color: #000
+
+@media (max-width: 560px)
+  header
+    height: 120px
+    padding: 1rem
+    nav
+      flex-direction: column

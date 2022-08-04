@@ -1,0 +1,38 @@
+.container
+  max-width: 960px
+  margin: 2rem auto
+  padding: 0 2rem
+
+  h1
+    text-align: center
+    margin-bottom: 1rem
+    color: #ddd
+
+  .products
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 1rem
+    text-align: center
+
+    a
+      text-decoration: none
+      color: #000
+
+    .product
+      background: #ddd
+      padding: .4rem
+      border-radius: .6rem
+      box-shadow: 5px 5px 15px 5px #00000018
+      &:hover
+        scale: .95
+        cursor: pointer
+
+    img
+      display: block
+      max-width: 100%
+      border-radius: .6rem
+      margin-bottom: .6rem
+
+  @media (max-width: 800px)
+    .products
+      grid-template-columns: 1fr 1fr

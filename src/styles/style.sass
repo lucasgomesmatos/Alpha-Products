@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&display=swap')
+
+*
+  box-sizing: border-box
+  padding: 0px
+  margin: 0px
+  font-family: 'Sora', sans-serif
+
+  body
+    background: #808080
+
+  .animaLeft
+    transform: translateX(-20px)
+    opacity: 0
+    animation: animaLeft .3s forwards
+
+  @keyframes animaLeft
+    to
+      transform: initial
+      opacity: 1

@@ -1,0 +1,64 @@
+.container-product-item
+  max-width: 960px
+  margin: 2rem auto
+  padding: 0 2rem
+  display: flex
+  justify-content: center
+
+  .prod
+    gap: 1rem
+    background: #ddd
+    padding: .4rem
+    border-radius: .8rem
+    box-shadow: 5px 5px 15px 5px #00000018
+    &:hover
+      scale: .95
+      cursor: pointer
+
+    .product-item
+      gap: 1rem
+      display: flex
+
+      img
+        display: block
+        max-width: 100%
+        border-radius: .6rem
+        margin-bottom: .6rem
+
+      .details
+        margin-top: 2rem
+        display: flex
+        align-items: center
+        flex-direction: column
+        gap: .6rem
+        text-align: center
+
+      .price
+        width: 120px
+        border-radius: .6rem
+        padding: .6rem .8rem
+        background: #555
+        color: #fff
+        margin-bottom: 1rem
+
+      .description
+        width: 480px
+
+  @media (max-width: 800px)
+    .product-item
+      display: flex
+      align-items: center
+      flex-direction: column
+
+      img
+        height: 280px
+        margin: 0
+
+      .details p
+        padding: 0 10px 10px 10px
+        max-width: 280px
+
+  @media (max-width: 600px)
+    .details p
+      padding: 0 10px 10px 10px
+      max-width: 180px
