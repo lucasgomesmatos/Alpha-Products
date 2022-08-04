@@ -33,7 +33,7 @@ export const Product = () => {
   return (
     <section className="container-product-item animaLeft">
       <Head
-        title={`Produto - ${product.nome ?? product.nome}`}
+        title={`Produto - ${product.nome}`}
         description="Página de Produtos"
       />
       <div className="products">
