@@ -1,5 +1,5 @@
 export const Head = (pros) => {
-  if (pros) document.title = pros.title;
+  if (pros.title) document.title = pros.title;
   document
     .querySelector("meta[name='description']")
     .setAttribute('content', pros.description);
